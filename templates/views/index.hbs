@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+    Home page
+</title>
+
+<link rel="stylesheet" href="/css/main.css">
+<link rel="icon" href="/img/weather.png">
+</head>
+<body>
+        <div class="main-content">
+                {{>header}}
+        <div id="newTag">
+                Get the weather update at anytime <br />
+                You last visited on {{lastVisited}}
+                
+        </div>
+        <form>
+                <input placeholder="location">
+                <button>Search</button>
+                <p id="messageOne"></p>
+                <p id="messageTwo"></p>
+        </form>
+        </div>
+       
+       {{>footer}}
+       <script src="/js/main.js"></script>
+</body>
+
+
+</html>
