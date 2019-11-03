@@ -6,6 +6,7 @@ const forecast = require('./Utils/forecast')
 
 //get the instance of expressjs
 const app = express()
+const port = process.env.PORT || 3001
 
 //getting all the paths to views, partials, public folders
 const pathToPublicDirectory = path.join(__dirname,'../public')
@@ -94,6 +95,6 @@ app.get('*', (req,res) =>{
     })
 })
 
-app.listen(3001, () => {
+app.listen(port, () => {
     console.log('Node server has started at port 3001')
 })
